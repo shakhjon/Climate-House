@@ -140,13 +140,13 @@
 
   <!-- Video -->
   <video id="mainVideo" autoplay muted playsinline loop>
-    <source id="videoSrc" src="video/Uz.mp4" type="video/mp4">
+    <source id="videoSrc" src="Uz.mp4" type="mp4">
     Brauzeringiz video formatini qo‘llab-quvvatlamaydi.
   </video>
 
   <!-- Background Music -->
   <audio id="bgMusic" autoplay muted loop>
-    <source src="audio/music.mp3" type="audio/mpeg">
+    <source src="music.mp3" type="mpeg">
   </audio>
 
   <script>
@@ -157,11 +157,11 @@
       const source = document.getElementById('videoSrc');
 
       if (currentLang === "Uz") {
-        source.src = 'video/Ru.mp4';
+        source.src = 'Ru.mp4';
         currentLang = "Ru";
         document.querySelector('.lang-btn button').innerText = "Uz";
       } else {
-        source.src = 'video/Uz.mp4';
+        source.src = 'Uz.mp4';
         currentLang = "Uz";
         document.querySelector('.lang-btn button').innerText = "Ru";
       }
